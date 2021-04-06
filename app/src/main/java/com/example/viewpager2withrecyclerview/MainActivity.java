@@ -31,14 +31,9 @@ public class MainActivity extends AppCompatActivity {
         strings.add("Screen 3");
         strings.add("Screen 4");
         strings.add("Screen 5");
-        strings.add("Screen 6");
-        strings.add("Screen 7");
-        strings.add("Screen 8");
-        strings.add("Screen 9");
-        strings.add("Screen 10");
 
         myAdapter = new MyAdapter(this, strings);
-        mViewpager.setOrientation(ViewPager2.ORIENTATION_VERTICAL);
+        mViewpager.setOrientation(ViewPager2.ORIENTATION_HORIZONTAL);
         mViewpager.setAdapter(myAdapter);
         new TabLayoutMediator(mTabLayout, mViewpager, ((tab, position) -> {})).attach();
 
