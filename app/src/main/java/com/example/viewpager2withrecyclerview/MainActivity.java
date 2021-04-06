@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         mViewpager = findViewById(R.id.viewPagerEx);
         mTabLayout = findViewById(R.id.tabLayoutPromotions);
         strings = new ArrayList<>();
+
         strings.add("Screen 1");
         strings.add("Screen 2");
         strings.add("Screen 3");
@@ -35,7 +36,8 @@ public class MainActivity extends AppCompatActivity {
         myAdapter = new MyAdapter(this, strings);
         mViewpager.setOrientation(ViewPager2.ORIENTATION_HORIZONTAL);
         mViewpager.setAdapter(myAdapter);
-        new TabLayoutMediator(mTabLayout, mViewpager, ((tab, position) -> {})).attach();
+        new TabLayoutMediator(mTabLayout, mViewpager, ((tab, position) -> {
+        })).attach();
 
     }
 }
