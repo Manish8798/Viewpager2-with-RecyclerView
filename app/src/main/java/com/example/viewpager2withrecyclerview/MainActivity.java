@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         strings.add("Screen 5");
 
         myAdapter = new MyAdapter(this, strings);
-        mViewpager.setOrientation(ViewPager2.ORIENTATION_HORIZONTAL);
+        mViewpager.setOrientation(ViewPager2.ORIENTATION_VERTICAL);
         mViewpager.setAdapter(myAdapter);
         new TabLayoutMediator(mTabLayout, mViewpager, ((tab, position) -> {
         })).attach();
