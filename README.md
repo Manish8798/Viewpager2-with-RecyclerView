@@ -1,2 +1,2 @@
-# Viewpager2-with-RecyclerView
+# Viewpager2+RecyclerView+CollapsingToolbarLayout
 - ViewPager2 with RecyclerView.Adapter
